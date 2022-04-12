@@ -13,10 +13,6 @@ on:
   schedule:
     - cron:  '*/1 * * * *'      #### 60mins
 
-concurrency: 
-  group: ${{ github.ref }}
-  cancel-in-progress: true
-
 
 
 jobs:
