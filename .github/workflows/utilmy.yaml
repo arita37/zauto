@@ -39,14 +39,6 @@ jobs:
       uses: dschep/install-pipenv-action@v1
       
   
-    - name: Cache pipenv virtualenv
-      id: cache-pipenv
-      uses: actions/cache@v1
-      with:
-        path: /opt/hostedtoolcache/Python/
-        key: ${{ runner.os }}-pipenv-${{ hashFiles('**py36.txt') }}
-          
-
     - name: Install utilmy
       run:  |
         pip install utilmy
