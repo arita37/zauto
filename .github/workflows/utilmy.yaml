@@ -1,4 +1,4 @@
-name: AA_Build and Publish Package PyPI
+name: utilmy
 
 ###  https://github.com/arita37/awesome-actions#static-analysis
 
@@ -11,7 +11,7 @@ on:
     - main
 
   schedule:
-    - cron:  '2 * * * *'      #### 60mins
+    - cron:  '*/2 * * * *'      #### 60mins
 
 concurrency: 
   group: ${{ github.ref }}
