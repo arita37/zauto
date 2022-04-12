@@ -11,7 +11,7 @@ on:
     - main
 
   schedule:
-    - cron:  '*/2 * * * *'      #### 60mins
+    - cron:  '*/1 * * * *'      #### 60mins
 
 concurrency: 
   group: ${{ github.ref }}
