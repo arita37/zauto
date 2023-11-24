@@ -8,10 +8,10 @@ on:
     
   push:
     branches:
-    - main
+     - main
 
   schedule:
-    - cron:  '*/5 * * * *'      #### 60mins
+     - cron:  '*/5 * * * *'      #### 60mins
 
 
 
